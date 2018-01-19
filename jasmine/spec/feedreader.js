@@ -71,7 +71,7 @@ $(function() {
              $(".menu-icon-link").click();
              expect($("body").hasClass("menu-hidden")).toBe(true);
         });
-    })
+    });
     /* a new test suite named "Initial Entries" */
     describe('Initial Entries', function() {
 
@@ -90,7 +90,7 @@ $(function() {
             expect($(".feed .entry").length).toBeGreaterThan(0);
             done();
         });
-    })
+    });
     /* a new test suite named "New Feed Selection" */
     describe('New Feed Selection', function() {
 
@@ -112,5 +112,5 @@ $(function() {
             expect(feedAfter).not.toBe(feedBefore);
             done();
         });
-    })
+    });
 }());
